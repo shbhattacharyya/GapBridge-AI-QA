@@ -1,0 +1,146 @@
+{
+  "_comment": "GapGuardAI module mapping: maps TFS path keywords and assembly names to OnBase feature modules and XRAY test repository folder paths.",
+
+  "path_keywords": [
+    {
+      "keywords": ["FilterControl", "FilterRuntime", "Filter.Runtime", "FilterDisplay",
+                   "FilterColumn", "FilterView", "FilterSetting", "FilterField",
+                   "SaveFilter", "FilterDisplayColumn", "FilterFieldLayout",
+                   "WorkViewFilter", "FilterSummary", "SummaryInfo"],
+      "module": "Filters",
+      "xray_folder": "/Filters/Filter Runtime"
+    },
+    {
+      "keywords": ["WorkViewObject", "ObjectControl", "ObjectService", "ObjectBrowse",
+                   "WorkViewItem", "ItemService", "ObjectList", "WorkViewList"],
+      "module": "WorkView Objects",
+      "xray_folder": "/WorkView/Objects"
+    },
+    {
+      "keywords": ["WorkViewAttribute", "AttributeService", "AttributeControl",
+                   "AttributeValidation", "AttributeMapping"],
+      "module": "WorkView Attributes",
+      "xray_folder": "/WorkView/Attributes"
+    },
+    {
+      "keywords": ["WorkViewAppl", "ApplicationService", "WorkViewApp",
+                   "AppDesigner", "ApplicationDesigner"],
+      "module": "WorkView Application",
+      "xray_folder": "/WorkView/Application"
+    },
+    {
+      "keywords": ["WorkView", "WorkviewCore", "WorkView.Core",
+                   "WorkView.InterfaceServices", "WorkViewProvider"],
+      "module": "WorkView",
+      "xray_folder": "/WorkView"
+    },
+    {
+      "keywords": ["DocumentImaging", "DocumentViewer", "DocImaging",
+                   "ImageViewer", "TiffViewer", "PdfViewer"],
+      "module": "Document Imaging",
+      "xray_folder": "/Document Imaging"
+    },
+    {
+      "keywords": ["Workflow", "WorkflowQueue", "WorkflowTask", "WorkflowAction",
+                   "WorkflowRule", "LifeCycle"],
+      "module": "Workflow",
+      "xray_folder": "/Workflow"
+    },
+    {
+      "keywords": ["Capture", "CaptureService", "DocumentCapture",
+                   "CaptureQueue", "BatchImport"],
+      "module": "Capture",
+      "xray_folder": "/Capture"
+    },
+    {
+      "keywords": ["UnityClient", "Unity.Client", "UnityApp",
+                   "UnityShell", "UnityPlugin", "UnityPanel"],
+      "module": "Unity Client",
+      "xray_folder": "/Unity Client"
+    },
+    {
+      "keywords": ["Reporting", "ReportService", "ReportViewer",
+                   "ReportDefinition", "ReportEngine"],
+      "module": "Reporting",
+      "xray_folder": "/Reporting"
+    },
+    {
+      "keywords": ["FullText", "Indexing", "IndexService", "FTS",
+                   "FullTextSearch", "SearchIndex"],
+      "module": "Full-Text Search",
+      "xray_folder": "/Full-Text Search"
+    },
+    {
+      "keywords": ["KeywordEntry", "KeywordInput", "KeywordControl",
+                   "KeywordType", "KeywordService"],
+      "module": "Keywords",
+      "xray_folder": "/Keywords"
+    },
+    {
+      "keywords": ["DocumentRetrieval", "DocumentQuery", "RetrievalService",
+                   "QueryBuilder", "DocumentSearch"],
+      "module": "Document Retrieval",
+      "xray_folder": "/Document Retrieval"
+    },
+    {
+      "keywords": ["NotePlus", "NoteService", "NoteControl", "AnnotationPlus"],
+      "module": "Notes",
+      "xray_folder": "/Notes"
+    },
+    {
+      "keywords": ["Security", "UserGroup", "PermissionService", "AccessControl",
+                   "RoleService", "SecurityGroup"],
+      "module": "Security",
+      "xray_folder": "/Security"
+    }
+  ],
+
+  "assembly_to_module": {
+    "Filter.Runtime":                   "Filters",
+    "Canvas.Controls":                  "WorkView",
+    "WorkView.Core":                    "WorkView",
+    "WorkView.InterfaceServices":       "WorkView",
+    "Common.Core.WorkView":             "WorkView",
+    "Canvas.WorkView":                  "WorkView",
+    "WorkView.Providers":               "WorkView",
+    "WorkView.Model":                   "WorkView",
+    "DocumentImaging.Core":             "Document Imaging",
+    "DocumentImaging.Client":           "Document Imaging",
+    "Workflow.Core":                    "Workflow",
+    "Workflow.Client":                  "Workflow",
+    "Capture.Core":                     "Capture",
+    "Unity.Client":                     "Unity Client",
+    "Unity.Shell":                      "Unity Client",
+    "Reporting.Core":                   "Reporting",
+    "FullText.Core":                    "Full-Text Search",
+    "Security.Core":                    "Security"
+  },
+
+  "module_to_xray_folder": {
+    "Filters":               "/Filters/Filter Runtime",
+    "WorkView":              "/WorkView",
+    "WorkView Objects":      "/WorkView/Objects",
+    "WorkView Attributes":   "/WorkView/Attributes",
+    "WorkView Application":  "/WorkView/Application",
+    "Document Imaging":      "/Document Imaging",
+    "Workflow":              "/Workflow",
+    "Capture":               "/Capture",
+    "Unity Client":          "/Unity Client",
+    "Reporting":             "/Reporting",
+    "Full-Text Search":      "/Full-Text Search",
+    "Keywords":              "/Keywords",
+    "Document Retrieval":    "/Document Retrieval",
+    "Notes":                 "/Notes",
+    "Security":              "/Security"
+  },
+
+  "skip_segments": [
+    "jquery", "jqueryui", "jquery-ui", "angular", "angularjs", "bootstrap",
+    "react", "knockout", "lodash", "underscore", "moment", "mustache",
+    "handlebars", "backbone", "ember", "vue", "polymer", "webcomponents",
+    "vendor", "bower_components", "node_modules", "dependencies",
+    "infragistics", "telerik", "devexpress", "kendo", "syncfusion",
+    "artifacts", "generated", "autogenerated", "migrations",
+    "min", "dist", "build", "output"
+  ]
+}
